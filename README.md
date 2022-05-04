@@ -1,4 +1,5 @@
 ## OpenFOAM_liquid_properties ##
+###（未完）###
 OpenFOAMにliquidPropertieを追加する方法
 (一応バージョン違いも考慮して作るが、ベースはv9)
 
