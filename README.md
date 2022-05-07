@@ -64,6 +64,8 @@ https://github.com/snaka-dev/Training_begineer_OpenFOAM_Customize/blob/master/Te
 
     LIB = $(FOAM_USER_LIBBIN)/libthermophysicalProperties
     
+に修正．
+
 さらに同ファイル内でコンパイルするファイルを追記する．今回であれば，
 
     liquidProperties/gasoline/gasoline.C
