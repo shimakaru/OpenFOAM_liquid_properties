@@ -40,8 +40,25 @@ https://github.com/snaka-dev/Training_begineer_OpenFOAM_Customize/blob/master/Te
     cp IC8H18.C gasoline.C
     cp IC8H18.H gasoline.H
     cp IC8H18I.H gasolineI.H
-    rm -r IC*
+    sed -i -e s/'IC8H18'/'gasoline'/g gasoline.C
+    sed -i -e s/'IC8H18'/'gasoline'/g gasoline.H
+    sed -i -e s/'IC8H18'/'gasoline'/g gasolineI.H
+    rm IC*
     ls
+
+これにより，コメントも含めたテキストファイルの中身の「IC8H18」という文字列が「gasoline」に置換されたファイルが3つ出来上がる．
+これをもとに改造を行っていくこととなる．
+
+## 2.ソースを編集
+
+ここからは各ファイルをテキストエディターで開き編集していく．編集内容は以下のとおりである．
+細かい方はdescription等も弄った方がよいが面倒なので必要箇所だけ，「gasoline.C」を編集する．
+
+## 3.コンパイル
+
+
+
+
 
 
     
