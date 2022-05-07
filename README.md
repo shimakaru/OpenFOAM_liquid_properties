@@ -59,7 +59,9 @@ https://github.com/snaka-dev/Training_begineer_OpenFOAM_Customize/blob/master/Te
 コンパイル準備として以下の編集を行う．「$WM_PROJECT_USER_DIR/src/thermophysicalModels/thermophysicalProperties/Make/files」内の
 
     LIB = $(FOAM_LIBBIN)/libthermophysicalProperties
+    
 ↓
+
     LIB = $(FOAM_USER_LIBBIN)/libthermophysicalProperties
     
 さらに同ファイル内でコンパイルするファイルを追記する．今回であれば，
