@@ -72,6 +72,7 @@ https://github.com/snaka-dev/Training_begineer_OpenFOAM_Customize/blob/master/Te
 
 を追記．そしてコンパイルする．
 
+    cd $WM_PROJECT_USER_DIR/src/thermophysicalModels/thermophysicalProperties
     wmake
 
 以上．
