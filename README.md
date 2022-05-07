@@ -25,3 +25,24 @@ https://github.com/snaka-dev/Training_begineer_OpenFOAM_Customize/blob/master/Te
 
 次に今回、改造の対象となる「liquidProperties」を見に行く（ここはバージョンによってコマンドが違うかもしれない）。
 
+    cd $WM_PROJECT_USER_DIR/src/thermophysicalModels/thermophysicalProperties/liquidProperties
+    ls
+
+これによって，定義されている液体の物性値の名前一覧が取得できる．
+次に「IC8H18」をディレクトリごとコピーし「gasoline」という名前にし，ディレクトリを移動する．
+
+     cp -r IC8H18 gasoline
+     cd gasoline
+     ls
+
+「IC8H18.C  IC8H18.H  IC8H18I.H」の3ファイルをgasoline用に改造する．
+
+    cp IC8H18.C gasoline.C
+    cp IC8H18.H gasoline.H
+    cp IC8H18I.H gasolineI.H
+    rm -r IC*
+    ls
+
+
+    
+
