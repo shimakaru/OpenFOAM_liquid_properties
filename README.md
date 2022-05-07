@@ -51,15 +51,26 @@ https://github.com/snaka-dev/Training_begineer_OpenFOAM_Customize/blob/master/Te
 
 ## 2.ソースを編集
 
-ここからは各ファイルをテキストエディターで開き編集していく．編集内容は以下のとおりである．
+ここからは各ファイルをテキストエディターで開き編集していく．編集内容は省略．
 細かい方はdescription等も弄った方がよいが面倒なので必要箇所だけ，「gasoline.C」を編集する．
 
 ## 3.コンパイル
 
+コンパイル準備として以下の編集を行う．「$WM_PROJECT_USER_DIR/src/thermophysicalModels/thermophysicalProperties/Make/files」内の
 
+    LIB = $(FOAM_LIBBIN)/libthermophysicalProperties
+↓
+    LIB = $(FOAM_USER_LIBBIN)/libthermophysicalProperties
+    
+さらに同ファイル内でコンパイルするファイルを追記する．今回であれば，
 
+    liquidProperties/gasoline/gasoline.C
 
+を追記．そしてコンパイルする．
 
+    wmake
+
+以上．
 
     
 
